@@ -1,0 +1,21 @@
+#main-employee {
+    text-align: center;
+}
+
+.centerTable {
+    margin: auto;
+    width: 75%;
+}
+
+.flex-table-entries {
+    display: flex;
+    width: 1500px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.entries {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}

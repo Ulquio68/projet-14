@@ -1,0 +1,67 @@
+#main {
+    text-align: center;
+}
+
+.center-content {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    width: 15%;
+}
+
+input {
+    width: 50%;
+    height: 1.1rem;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+#state {
+    text-align: left;
+    white-space: nowrap;
+    width: 16em;
+    height: 35px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+}
+
+#department {
+    text-align: left;
+    white-space: nowrap;
+    width: 16em;
+    height: 35px;
+    font-size: 16px;
+    background-color: #f7f7f7;
+}
+
+label {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#buttonSave {
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#start-date {
+    margin-bottom: 10px;
+}
+
+.address {
+    padding: 4px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    border-color: #f7f7f7;
+}
+
+.dateTable {
+    margin-bottom: 10px;
+}
