@@ -3,17 +3,27 @@ import './index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
-function Modale({ fullName = '', onClose }) {
+export default function Modale({
+    fullName = '',
+    onClose,
+    backgroundColor,
+    textColor,
+}) {
+    const modaleStyles = {
+        backgroundColor: backgroundColor || '#fff',
+        color: textColor || '#000',
+    };
+
     return (
-        <div className="modale">
+        <div className="modale" style={modaleStyles}>
             <div className="modale-content">
                 <button className="close-button" onClick={onClose}>
                     <FontAwesomeIcon icon={faTimes} className="iconCross" />
                 </button>
-                <p>L'employé {fullName} a bien été créé!</p>
+                <p style={{ color: textColor }}>
+                    L'employé {fullName} a bien été créé!
+                </p>
             </div>
         </div>
     );
 }
-
-export default Modale;

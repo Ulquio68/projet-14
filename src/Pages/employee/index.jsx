@@ -59,7 +59,6 @@ function Employee() {
                                     </div>
                                 </div>
                             }
-                            style={{ width: '50%' }}
                         />
                     ) : (
                         <p>No employee data available.</p>

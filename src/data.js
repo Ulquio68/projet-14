@@ -1,7 +1,7 @@
 export const columns = [
     {
         name: 'First Name',
-        selector: (row) => row.FirstName, // Utilisez une fonction de sélecteur
+        selector: (row) => row.FirstName,
         sortable: true,
     },
     {

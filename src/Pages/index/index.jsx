@@ -4,7 +4,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import './index.css';
 import StateSelect from '../../Components/select/state';
 import DepartmentSelect from '../../Components/select/department';
-import Modale from '../../Components/modale';
+import Modale from 'component-modal-grst/dist/modale';
 import DatePicker from 'react-datepicker';
 import { AppContext } from '../../context';
 
@@ -83,6 +83,8 @@ function Home() {
                 <Modale
                     fullName={FirstName + ' ' + LastName}
                     onClose={closeModale}
+                    backgroundColor="#ffcc00"
+                    textColor="#333"
                 />
             )}
             <h1>HRnet</h1>

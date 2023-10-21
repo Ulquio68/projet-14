@@ -8,16 +8,14 @@ import Employee from './Pages/employee';
 import { AppProvider } from './context';
 
 ReactDOM.render(
-    <React.StrictMode>
-        <AppProvider>
-            <Router>
-                <Routes>
-                    <Route path="/index" element={<Home />} />
-                    <Route path="/employee-list" element={<Employee />} />
-                    <Route path="*" element={<Error />} />
-                </Routes>
-            </Router>
-        </AppProvider>
-    </React.StrictMode>,
+    <AppProvider>
+        <Router>
+            <Routes>
+                <Route path="/index" element={<Home />} />
+                <Route path="/employee-list" element={<Employee />} />
+                <Route path="*" element={<Error />} />
+            </Routes>
+        </Router>
+    </AppProvider>,
     document.getElementById('root')
 );
